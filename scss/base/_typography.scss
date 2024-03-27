@@ -1,0 +1,9 @@
+@font-face {
+    font-family:"Lexend" ; 
+    src: url(../assets/fonts/Lexend/Lexend-VariableFont_wght.ttf);
+}
+
+h1{
+    font-family: "Lexend";
+    color: $color-texto-primario;
+}

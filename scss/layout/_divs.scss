@@ -1,0 +1,31 @@
+@mixin displayflex { //Variable 1
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: goldenrod ;
+    margin: 10px;
+}
+
+@mixin wid-he { //Variable 2
+    width: 50%;
+    height: 30dvh;
+}
+
+
+.container {
+    @include displayflex;
+    flex-direction: column;
+    background-color: chartreuse;
+}
+
+//Aca llamo las dos variables creadas con los mixin
+.contenedor {
+    @include displayflex; //Variable 1
+    @include wid-he; //Variable 2
+}
+
+.contenedor--iframe {
+    @extend .contenedor;
+    height: 50dvh;
+}
